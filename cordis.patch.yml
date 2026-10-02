@@ -1,0 +1,4 @@
+# 推理等级滑块：把本插件的一行插进 web profile 的加载树。
+- insert:
+    - id: ui-effort-slider
+      name: '@wzl0813/dsh-client-ui-effort-slider'

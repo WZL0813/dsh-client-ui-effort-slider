@@ -1,0 +1,44 @@
+{
+  "name": "@wzl0813/dsh-client-ui-effort-slider",
+  "description": "Standalone reasoning-effort slider for the DeepSeek Harness composer model menu: Off/Low/High/Max levels, a WebGL fire track and drag snapping, injected into the official model popup. Extracted from the aurora skin, skin-agnostic.",
+  "version": "0.2.8",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./src/*": "./src/*",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "license": "Apache-2.0",
+  "author": "WZL0813",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WZL0813/dsh-web-ui.git"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-client-runtime": "^0.1.0-rc.6",
+    "lightningcss": "^1.32.0",
+    "tsdown": "^0.22.2",
+    "typescript": "~5.7.2"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "watch": "tsdown --watch"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ]
+}
